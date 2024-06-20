@@ -1,0 +1,5 @@
+.idea
+__pycache__
+dataset
+lightning_logs
+train_logs
