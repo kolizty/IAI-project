@@ -30,12 +30,12 @@ def prepare_images(directory):
     return images_tensor
 
 if __name__ == '__main__':
-	model_path = 'path_to_your_model_checkpoint.ckpt'
+    model_path = 'path_to_your_model_checkpoint.ckpt'
     classifier = ViolenceClass(model_path)
     directory = 'path_to_your_image_directory'
     image_tensors = prepare_images(directory)
     predictions = classifier.classify(image_tensor)
-	print("Predicted Classes:", predictions)
+    print("Predicted Classes:", predictions)
 
 ```
 
