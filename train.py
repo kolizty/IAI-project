@@ -22,7 +22,7 @@ logger = TensorBoardLogger("train_logs", name=log_name)
 
 # 实例化训练器
 trainer = Trainer(
-    max_epochs=50,
+    max_epochs=100,
     accelerator='gpu',
     devices=gpu_id,
     logger=logger,
